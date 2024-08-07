@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #4a2121;
+    transition: background-color 1s ease;
+}
+
+a {
+    display: flex;
+    align-items: baseline;
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+nav div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+
+.title-text-link {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.nav-ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-ul li {
+    height: 100%;
+    list-style: none;
+}
+
+.nav-ul-button {
+    color: gray;
+    font-size: 20px;
+    background: none;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    opacity: 1;
+    transition: color 0.1s, border 0.1s, opacity 1s ease;
+    cursor: pointer;
+}
+
+.nav-ul-button:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#nav-ul-logout a {
+    color: gray;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#nav-ul-logout:hover a {
+    color: white;
+}
+
+.nav-ul-button-selected {
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.login-register-div {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    font-size: 17px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.login-register-form {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.register-form {
+    height: 90%;
+}
+
+.login-register-form input {
+    font-size: 15px;
+    color: white;
+    margin-top: 3px;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-register-form input[type="text"],
+.login-register-form input[type=password] {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.login-register-form input[type="text"]:focus,
+.login-register-form input[type=password]:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.login-register-form input[type="submit"] {
+    width: 70%;
+    margin-top: 20px;
+    background: none;  
+    cursor: pointer; 
+}
+
+.login-register-form input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login-register-form input[type="submit"]:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-register-form > a {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: -35px;
+    color: #4287f5;
+}
+
+.login-register-form a:hover {
+    text-decoration: underline;
+}
+
+.white-a {
+    font-weight: 400;
+    color: white;
+}
+
+.home-container {
+    height: 80%;
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxes {
+    color: white;
+    background: rgba(200, 200, 200, 0.1);
+    border: 1px solid #4a2121;
+    border-radius: 5px;
+    transition: background 1s ease, border 0.8s ease;
+}
+
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 35px;
+    margin-right: -250px;
+}
+
+.top-buttons-div {
+    padding: 10px;
+    display: flex;
+}
+
+.top-button {
+    color: white;
+    font-size: 19px;
+    background: none;
+    padding: 10px;
+    border: 1px solid #573333;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 1;
+    transition: background 0.2s ease, opacity 1s ease, border 1s ease;
+}
+
+.top-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.top-button-selected {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#timer {
+    margin-bottom: 10px;
+    font-size: 100px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.timer-button {
+    padding: 10px 45px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.timer-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#pause-button {
+    display: none;
+}
+
+.tasks-box {
+    padding: 0 25px;
+    height: 80%;
+    overflow-y: hidden;
+}
+
+.tasks-box-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid gray;
+}
+
+#tasks-clear-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#tasks-clear-button:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tasks-box input[type="text"] {
+    color: white;
+    font-size: 17px;
+    background: none;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.tasks-box input[type="text"]:focus {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tasks-add-button {
+    font-size: 17px;
+    background-color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tasks-add-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tasks {
+    height: 65%;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+
+#tasks-list li {
+    list-style: none;
+}
+
+.task {
+    max-width: 266px;
+    max-height: 60px;
+    display: flex;
+    padding: 7px;
+    margin: 7px 0;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+
+.checkboxes {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    min-width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.1s;
+
+}
+
+.checkboxes:hover {
+    background: rgba(105, 105, 105, 0.2);
+}
+
+.checkboxes:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 15px;
+    content: "\f00c";
+    display: none;
+}
+
+.checkboxes:checked {
+    border-color: dimgray;
+    background: none;
+}
+
+.checkboxes:checked:after {
+    display: block;
+}
+
+.task-text {
+    overflow: scroll;
+    transition: 0.1s;
+}
+
+.task-text:hover {
+    color: rgba(180, 180, 180, 1);
+    cursor: pointer;
+}
+
+.task-text-checked {
+    text-decoration: line-through;
+    color: rgba(140, 140, 140, 1);
+}
+
+/* Focus UI */
+
+.focus-body {
+    background-color: #4a2121;
+}
+
+.focus-boxes {
+    border: 1px solid #4a2121;
+}
+
+.focus-top-button {
+    border: 1px solid #573333;
+}
+
+/* Short Break UI */
+
+.short-break-body {
+    background-color: #454a1c;
+}
+
+.short-break-boxes {
+    border: 1px solid #454a1c;
+}
+
+.short-break-top-button {
+    border: 1px solid #53572e;
+}
+
+/* Long Break UI */
+
+.long-break-body {
+    background-color: #1c4a1c;
+}
+
+.long-break-boxes {
+    border: 1px solid #1c4a1c;
+}
+
+.long-break-top-button {
+    border: 1px solid #2e572e;
+}
+
+/* During timer CSS */
+
+.body-timer-bg {
+    background-color: black;
+}
+
+.invisible {
+    cursor: default;
+    opacity: 0;
+}
+
+.boxes-timer-bg {
+    background: none;
+    border: 1px solid dimgray;
+}
+
+
+
+.about-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 350px;
+    display: none;
+}
+
+.about-sections {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.about-sections h1 {
+/*    color: rgb(157, 154, 181);*/
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.about-sections p {
+    color: lightgray;
+}
+
+.external-links {
+    display: inline;
+}
+
+.wikipedia {
+    color: gray;
+}
+
+.wikipedia:hover {
+    color: dimgray;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 10px 0;
+    border-radius: 10px;
+    border-top: 1px solid white;
+    background: rgba(200, 200, 200, 0.1);
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.creator-text {
+    margin: 10px 0;
+}
+
+.footer-div .github {
+    color: lightgray;
+}
+
+.github:hover {
+    text-decoration: underline;
+}
+
+.footer-socials i {
+    font-size: 25px;
+}
+
+.foot-notes {
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}
+
+.mobile {
+    display: none !important;
+}
+
+@media (max-width: 815px){
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    nav div {
+        width: 100%;
+    }
+
+    .login-register-div {
+        margin-top: -50px;
+    }
+
+    .login-register-form {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .login-register-form label,
+    .login-register-form > a {
+        font-size: 20px;
+    }
+
+    .login-register-form input {
+        font-size: 25px;
+    }
+
+    .timer-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .tasks-box {
+        width: 100%;
+        max-height: 450px;
+        text-align: center;
+    }
+
+    .task {
+        max-width: 100%;
+    }
+    
+    .about-container {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
