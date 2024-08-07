@@ -31,7 +31,7 @@ A study timer based on the [Pomodoro Technique](https://en.wikipedia.org/wiki/Po
 **Clone the project**
 
 ```bash
-git clone https://github.com/Yudin101/ToTimer.git
+git clone git@github.com:RuchiLamichhane/Pomodoro-Timer.git
 ```
 
 **Go to the project directory**
